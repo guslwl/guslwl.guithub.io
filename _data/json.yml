@@ -1,0 +1,37 @@
+- key: Name
+  value: Gustavo S.
+- key: "whoami"
+  value:
+    - ">____"
+    - CS student
+    - Learning web and game development
+    - Currently breaking things
+    - Then googling the error
+    - Will fix them properly later
+    - Probably...
+  typed: true
+
+# - key: CV
+#   value:
+#     - key: cv_en
+#       value: cv.pdf
+#       url: /cv_en.pdf
+#     - key: cv_pt-BR
+#       value: cv_pt-BR.pdf
+#       url: /cv_pt-BR.pdf
+
+- key: Contact
+  value:
+    - key: Email
+      value: hallo@guslwl.dev
+      url: "mailto:hallo@guslwl.dev"
+- key: Profiles
+  value:
+    - value: GitHub
+      url: https://github.com/guslwl
+    - value: "X (Twitter)"
+      url: https://x.com/guslwl
+
+- key: Credits
+  value: piazzai/hacked-jekyll
+  url: https://github.com/piazzai/hacked-jekyll

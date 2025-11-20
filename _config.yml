@@ -1,0 +1,6 @@
+title: Welcome xD
+description: My space!
+
+theme: hacked-jekyll
+
+exclude: [.gitignore, README.md, CNAME]
