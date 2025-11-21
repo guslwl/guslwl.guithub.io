@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<style>
+  /* Minimal overrides to make the list readable but keep the JSON vibe */
+  .blog-list { margin-top: 20px; }
+  .blog-item { display: inline; color: #51cf66; margin-bottom: 10px; text-decoration: none; }
+  .date { color: #868e96;}
+</style>
+
+
+<header style="margin-bottom: 2rem;">
+    <a href="{{ "/" | relative_url }}" style="text-decoration: none;">&larr; return to /</a>
+</header>
+
+<div class="blog-list">
+  <span>"blog"</span>: [
+  <br>
+
+  {% for post in paginator.posts %}
+    &nbsp;&nbsp;{
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"title": "<a class="blog-item" href="{{ post.url | relative_url }}">{{ post.title }}</a>",
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"date": "<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>"
+    <br>
+    &nbsp;&nbsp;}{% unless forloop.last %},{% endunless %}
+    <br>
+  {% endfor %}
+  ]
+
+  {% if paginator.total_pages > 1 %}
+  <br>
+  <span>"nav"</span>: {
+    <br>
+    {% if paginator.previous_page %}
+      &nbsp;&nbsp;"previous_page": "<a class="nav-link" href="{{ paginator.previous_page_path }}"><< load_prev</a>"
+      {% if paginator.next_page %},{% endif %}
+      <br>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      &nbsp;&nbsp;"next_page": "<a class="nav-link" href="{{ paginator.next_page_path }}">load_next >></a>"
+      <br>
+    {% endif %}
+  }
+  {% endif %}
+
+</div>

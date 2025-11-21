@@ -4,3 +4,11 @@ description: My space!
 theme: hacked-jekyll
 
 exclude: [.gitignore, README.md, CNAME]
+
+plugins:
+  - jekyll-paginate
+
+
+# Paginator Settings
+paginate: 5 # Posts per page 
+paginate_path: "/blog/page:num/"

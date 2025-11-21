@@ -31,6 +31,10 @@
       url: https://github.com/guslwl
     - value: "X (Twitter)"
       url: https://x.com/guslwl
+    
+- key: Blog
+  value: /blog/
+  url: /blog/
 
 - key: Credits
   value: piazzai/hacked-jekyll

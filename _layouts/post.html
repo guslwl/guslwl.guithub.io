@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+</head>
+<body style="padding: 2rem; font-family: 'Hack', monospace; color: #adb5bd; background-color: #212529;">
+
+  <header style="margin-bottom: 2rem;">
+    <a href="{{ "/" | relative_url }}" style="color: #51cf66; text-decoration: none;">&larr; /</a><br>
+    <a href="{{ "/blog" | relative_url }}" style="color: #51cf66; text-decoration: none;">&larr; /blog</a>
+  </header>
+
+  <article>
+    <h1 style="color: #e9ecef;">{{ page.title }}</h1>
+    <p style="color: #868e96; font-size: 0.9rem;">{{ page.date | date: "%B %d, %Y" }}</p>
+    <hr style="border-color: #495057;">
+    
+    <div class="content" style="line-height: 1.6; color:#e9ecef">
+      {{ content }}
+    </div>
+  </article>
+
+</body>
+</html>
