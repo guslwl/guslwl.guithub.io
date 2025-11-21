@@ -20,11 +20,12 @@
 #       value: cv_pt-BR.pdf
 #       url: /cv_pt-BR.pdf
 
-- key: Contact
-  value:
-    - key: Email
-      value: hallo@guslwl.dev
-      url: "mailto:hallo@guslwl.dev"
+# - key: Contact
+#  value:
+#    - key: Email
+#      value: hallo@guslwl.dev
+#      url: "mailto:hallo@guslwl.dev"
+
 - key: Profiles
   value:
     - value: GitHub
